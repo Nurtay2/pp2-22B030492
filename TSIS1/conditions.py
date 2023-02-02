@@ -33,3 +33,39 @@ b2 = 200
 
 if b2 > a2:
   pass
+
+#EXERCICES
+
+a3 = 50
+b3 = 10
+if a > b:
+  print("Hello World")
+
+if a3!=b3:
+  print("Hello World")
+
+
+if a3 == b3:
+  print("Yes")
+else:
+  print("No")
+
+if a3 == b3:
+  print("1")
+elif a3 > b3:
+  print("2")
+else:
+  print("3")
+
+c3 = 50
+d3 = 20
+if a3 == c3 and b3 == d3:
+  print("Hello")
+
+if a3 == c3 or b3 == d3:
+  print("Hello")
+
+if 5 > 2:
+    print("Five is greater than two!")
+
+

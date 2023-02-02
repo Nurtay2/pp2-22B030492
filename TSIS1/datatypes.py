@@ -22,9 +22,31 @@ b = list(("apple", "banana", "cherry"))	#list
 c = tuple(("apple", "banana", "cherry"))	#tuple
 d = range(6)	#range
 e = dict(name="John", age=36)	#dict
-e = set(("apple", "banana", "cherry"))	#set
-f = frozenset(("apple", "banana", "cherry"))	#frozenset
-g = bool(5)	#bool
+f = set(("apple", "banana", "cherry"))	#set
+g = frozenset(("apple", "banana", "cherry"))	#frozenset
+h1 = bool(5)	#bool
 h = bytes(5)	#bytes
-h = bytearray(5)	#bytearray
+h2 = bytearray(5)	#bytearray
 j = memoryview(bytes(5))	#memoryview
+
+#exercices
+x1 = 5
+print(type(x))
+
+y1 = "Hello World"
+print(type(y))
+
+z1 = 20.5
+print(type(z))
+
+l = ["apple", "banana", "cherry"]
+print(type(l))
+
+m = ("apple", "banana", "cherry")
+print(type(m))
+
+n = {"name" : "John", "age" : 36}
+print(type(n))
+
+o = True
+print(type(o))

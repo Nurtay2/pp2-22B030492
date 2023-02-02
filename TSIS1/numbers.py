@@ -30,3 +30,14 @@ print(type(c))
 import random
 
 print(random.randrange(1, 10))
+
+#EXERCICES
+
+x2 = 5
+x23 = float(x2)
+
+y2 = 5.5
+y23 = int(y2)
+
+z2 = 5
+z23 = complex(z2)
