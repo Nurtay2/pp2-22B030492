@@ -23,3 +23,29 @@ while b < 6:
   b += 1
 else:
   print("i is no longer less than 6")
+
+#EXEERCICES
+
+l = 1
+while l < 6:
+  print(l)
+  l += 1
+
+m = 1
+while m < 6:
+  if m == 3:
+    break
+  m += 1
+
+n = 1
+while n < 6:
+  if n == 3:
+    break
+  n += 1
+
+o = 1
+while o < 6:
+  print(o)
+  o += 1
+else:
+  print("i is no longer less than 6")

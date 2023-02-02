@@ -53,3 +53,20 @@ for x in adj:
 
 for x in [0, 1, 2]:
   pass
+
+#EXERCICES
+
+fruits2 = ["apple", "banana", "cherry"]
+for x in fruits2:
+  print(x)
+for x in fruits2:
+  if x == "banana":
+    continue
+
+for x in range(6):
+  print(x)
+
+for x in fruits2:
+  if x == "banana":
+    break
+  print(x)
