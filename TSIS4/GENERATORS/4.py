@@ -1,11 +1,8 @@
-def squares(a, b):
-    c = [int(i)**2 for i in range(a, b)]
-    for i in c:
-        j = a
-        if i / j == j:
-            print(i)
-        j += 1
-    yield i
-a = int(input("Begin: "))
-b = int(input("End: "))
-print(next(squares(a, b)))
+def Squares(a, b):
+    for i in range(a, b):
+        yield i*i
+a, b = int(input("Enter the first number: ")), int(input("Enter the second number: "))
+for i in range(a, b):
+    for j in Squares(a, b):
+        if i*i == j:
+            print(j)

@@ -1,4 +1,9 @@
-number = int(input("Write number: "))
-even_n = [i for i in range(number) if i%2==0]
-print("All even numbers up to {}".format(number))
-print(*even_n,sep =", ")
+def Even_num(n):
+    for i in range(n):
+        if i%2 == 0:
+            yield i
+n = int(input("Enter the number: "))
+s = []
+for i in Even_num(n):
+    s.append(i)
+print(*s, sep = ", ")

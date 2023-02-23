@@ -1,4 +1,7 @@
-number =  int(input("Write number: "))
-back_s = [i for i in range(number,-1,-1)]
+def Down(n):
+    for i in range(n, -1, -1):
+        yield i
 
-print(*back_s,sep="\n")
+n = int(input("Enter the number: "))
+for i in Down(n):
+    print(i)
