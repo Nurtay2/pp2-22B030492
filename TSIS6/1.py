@@ -1,5 +1,5 @@
 import os
-path = os.path.abspath("TSIS6")
+path = os.path.abspath("")
 print("Only directories:")
 print([ name for name in os.listdir(path) if os.path.isdir(os.path.join(path, name)) ])
 print("\nOnly files:")
