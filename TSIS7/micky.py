@@ -10,7 +10,6 @@ def get_clock_pos(clock_dict, clock_hand):
     y = 410 + 300 * math.sin(math.radians(clock_dict[clock_hand]) - math.pi / 2)
     return x, y
 
-
 pygame.init()
 
 screen = pygame.display.set_mode((820, 820))

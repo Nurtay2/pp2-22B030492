@@ -27,7 +27,7 @@ def stop_music():
 
 def next_music():
     global current_music
-    current_music = (current_music + 1) % len(MUSIC_FILES)
+    current_music = int(current_music + 1) % len(MUSIC_FILES)
     pygame.mixer.music.load(MUSIC_FILES[current_music])
     pygame.mixer.music.play()
 
