@@ -17,6 +17,7 @@ clock = pygame.time.Clock()
 clock60 = dict(zip(range(60), range(0, 360, 6)))
 font = pygame.font.SysFont('Verdana', 36)
 bg = pygame.image.load(r'tsis7/mic.png').convert()
+
 bg_rect = bg.get_rect()
 image_left = pygame.image.load(r"tsis7/second.png")
 left_rect = image_left.get_rect(bottomleft=(415, 565))
@@ -54,4 +55,5 @@ while True:
     pygame.display.update()
     clock.tick(10)
     screen.fill(0)
+
 
