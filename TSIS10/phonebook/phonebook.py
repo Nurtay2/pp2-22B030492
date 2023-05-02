@@ -21,7 +21,7 @@ def main():
           CHECK (LENGTH(phone_number) = 12 AND phone_number LIKE '+7%')
         );""")
     while on:
-        a=int(input("type:\n 1-add,\n2-delete,\n3-edit,\n4-look,\n5-clear book,\n6-resort,\n7-import from csv\n:"))
+        a=int(input("type:\n 1-add,\n2-delete,\n3-edit,\n4-look,\n5-clear book,\n6-resort,\n7-import from csv,\n8-select with limit and offset \n:"))
         if a == 1:
             try:
                 name_to_insert=input("enter name: ")
@@ -80,6 +80,14 @@ def main():
                         cursor.execute(f"""INSERT INTO phonebook3(first_name,last_name, phone_number)
                         VALUES ('{conte[0]}','{conte[1]}','{conte[2]}')""")
 
+        elif a == 8:
+            limit = input("Enter the limit")
+            offset = input("Enter the offset")
+            with connection.cursor() as cursor:
+                cursor.execute(f"""SELECT * FROM phonebook3 LIMIT '{int(limit)}' OFFSET '{int(offset)}'""")
+                all = cursor.fetchall()
+                for _, name, last_name, phone in all:
+                    print("|" + name + " " + last_name + "---" + phone + "|")
     connection.close()
 
 if __name__ == "__main__":
